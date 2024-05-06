@@ -1,6 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class Hotel {
 
@@ -36,6 +34,22 @@ public class Hotel {
         System.out.println(lista.toString());
     }
 
+    public void ordenarprecioAscendente(){
+        List<Habitacion>Arraylist = new ArrayList<>(this.ListaHotel.values());
+        Collections.sort(Arraylist,  Comparador.Ascendente());
+        ListaHotel.clear();
+        for(Habitacion i:Arraylist){
+            this.ListaHotel.put(i.getNumeroHab(),i);
+        }
+    }
+    public void ordenarprecioDescendente(){
+        List<Habitacion>Arraylist = new ArrayList<>(this.ListaHotel.values());
+        Collections.sort(Arraylist,  Comparador.Descendente());
+        ListaHotel.clear();
+        for(Habitacion i:Arraylist){
+            this.ListaHotel.put(i.getNumeroHab(),i);
+        }
+    }
 
 
 }
