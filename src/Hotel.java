@@ -38,16 +38,16 @@ public class Hotel {
         List<Habitacion>Arraylist = new ArrayList<>(this.ListaHotel.values());
         Collections.sort(Arraylist,  Comparador.Ascendente());
         ListaHotel.clear();
-        for(Habitacion i:Arraylist){
-            this.ListaHotel.put(i.getNumeroHab(),i);
+        for(Habitacion nueva:Arraylist){
+            ListaHotel.put(nueva.getNumeroHab(),nueva);
         }
     }
     public void ordenarprecioDescendente(){
         List<Habitacion>Arraylist = new ArrayList<>(this.ListaHotel.values());
         Collections.sort(Arraylist,  Comparador.Descendente());
         ListaHotel.clear();
-        for(Habitacion i:Arraylist){
-            this.ListaHotel.put(i.getNumeroHab(),i);
+        for(Habitacion nueva:Arraylist){
+            ListaHotel.put(nueva.getNumeroHab(),nueva);
         }
     }
 
