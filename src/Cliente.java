@@ -32,10 +32,10 @@ public boolean añadircliente(Cliente cliente){
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true; // Verifica si es la misma referencia
-        if (obj == null || getClass() != obj.getClass()) return false; // Verifica si es de la misma clase
-        Cliente cliente = (Cliente) obj;
-        return id == cliente.id; // Verifica si los IDs son iguales
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cliente cliente = (Cliente) o;
+        return id == cliente.id;
     }
 }
