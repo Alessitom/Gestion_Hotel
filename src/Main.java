@@ -14,6 +14,8 @@ public class Main {
                  Hotel.rellenarHotel();
                  hotel.ListaHabitaciones();
                  break;
+             case 6:
+            	 System.out.println("Has salido del programa");
              default:
                  break;
 
